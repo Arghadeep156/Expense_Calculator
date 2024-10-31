@@ -19,8 +19,7 @@ export function Header({ handleAddTask }) {
 
   return (
     <header className={styles.header}>
-      <img src={todoLogo} />
-
+      <h1>Todo List</h1>
       <form onSubmit={handleSubmit} className={styles.newTaskForm}>
         <input placeholder="Add a new task" type="text" onChange={onChangeTitle} value={title} />
         <button>Create <AiOutlinePlusCircle size={20} /></button>
